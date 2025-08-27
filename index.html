@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome in promoti!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Your Region</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f9f9f9;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #444;
+    }
+    .region-select {
+      display: flex;
+      gap: 2rem;
+    }
+    .region {
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .region:hover {
+      transform: scale(1.1);
+    }
+    .region img {
+      width: 80px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .region span {
+      display: block;
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome in promoti!</h1>
+  <p>Please select your region:</p>
+  
+  <div class="region-select">
+    <a href="/uk/" class="region">
+      <img src="/icons/uk.svg" alt="United Kingdom">
+      <span>United Kingdom</span>
+    </a>
+    <a href="/pl/" class="region">
+      <img src="/icons/pl.svg" alt="Polska">
+      <span>Polska</span>
+    </a>
+  </div>
+</body>
+</html>
