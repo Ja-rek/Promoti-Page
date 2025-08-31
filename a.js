@@ -2,11 +2,11 @@ function filterCoupons(n,t){if(coupons&&n){const i=document.getElementsByClassNa
         <button class="close-button" onclick="closeModal()">✖</button>
         <picture>
         <source
-            srcset="/img/shop/${u}.webp, /img/shop/${u}-2x.webp 2x"
+            srcset="/img/shop/${u.replace(/['"]/g,"")}.webp, /img/shop/${u.replace(/['"]/g,"")}-2x.webp 2x"
             type="image/webp"
         />
         <img
-            src="/img/shop/${u}.webp"
+            src="/img/shop/${u.replace(/['"]/g,"")}.webp"
             alt="${a}"
             loading="lazy"
             width="240"
